@@ -1,0 +1,17 @@
+start springboot project using commands
+1. Maven - mvn spring-boot:run
+2. Java - java -jar ../target/accounts-0.0.1-SNAPSHOT.jar
+
+
+Docker Commands:
+1. docker build . -t gaddams/easybank-accounts    -->if the project is available in root folder then give (.). if not provide correct path as folder name
+2. docker images --> it will give all the images are running in docker
+3.  docker inspect image <image id>  --> it will give all the details of image
+4. docker run -p 8080:8080 gaddams/easybank-accounts  ->> it will run the docker container. -p indecates port.
+5. docker run -d -p 8080:8080 gaddams/easybank-accounts  ->> it will run the docker container. -p indecates port. -d means application runs in detached mode.
+    -p <host ip>: <server ip>
+6. docker ps - it will give existing containers are running inside system
+7. docker ps -a --> it will give all the containers with all the status
+8.  docker start <container_id> --> to start the container
+
+--Application image created with docker file
