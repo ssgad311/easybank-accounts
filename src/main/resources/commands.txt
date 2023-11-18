@@ -14,4 +14,13 @@ Docker Commands:
 7. docker ps -a --> it will give all the containers with all the status
 8.  docker start <container_id> --> to start the container
 
+
 --Application image created with docker file
+
+Push the local docker images to remote docker hub
+docker image push docker.io/gaddams/easybank-accounts
+
+Docker compose commands
+1. docker compose up
+2. docker compose up -d
+3. docker compose down
